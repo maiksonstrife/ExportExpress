@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="maikson.ExportXpressDEMO">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/if_xpressstartblack"
+        android:label="ExportXpress"
+        android:roundIcon="@mipmap/if_xpressstartblack_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+
+        <activity
+            android:name="com.maikson.exportxpress.view.MenuSelectionActivity"
+            android:label="MenuSelection"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.maikson.exportxpress.scan.ScanActivity"
+            android:label="@string/scan"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.maikson.exportxpress.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maikson.exportxpress.crop.CropActivity"
+            android:label="@string/crop"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.maikson.exportxpress.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.maikson.exportxpress.UploadActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.maikson.exportxpress.FullscreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.maikson.exportxpress.ListaEnvios"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
