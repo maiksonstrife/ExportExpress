@@ -9,8 +9,18 @@ Aplicativo de demonstração para transportadoras.
 - [x] Lista de arquivos enviados para conferencia no App
 - [x] Site para monitoramento
 <br>
+
+##Links
 Aplicação: https://play.google.com/store/apps/details?id=maikson.ExportXpressDEMO <br>
 Acesso a pagina Admin : http://azure.infordoc.com/maikson/Bootstrap/EntregasXpress/login.html <br>
-Envio com Retrofit2 + PHP + SQL + Geolocalização + Tabela Javascript/Bootstrap<br>
+
+##Linguagens e Ferramentas
+Retrofit2 <br>
+PHP <br>
+MSSQL <br>
+Android Studio <br>
+Kotlin <br>
+OpenCV <br>
+Bootstrap 4 <br>
 
 ![](img/EntregasXpress.png)
